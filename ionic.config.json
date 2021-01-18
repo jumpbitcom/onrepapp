@@ -1,0 +1,7 @@
+{
+  "name": "onlinereports",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
