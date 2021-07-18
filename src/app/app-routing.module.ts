@@ -10,6 +10,26 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'kategorien',
+    loadChildren: () => import('./kategorien/kategorien.module').then( m => m.KategorienPageModule)
+  },
+  {
+    path: 'artikel',
+    loadChildren: () => import('./artikel/artikel.module').then( m => m.ArtikelPageModule)
+  },
+  {
+    path: 'hilfe',
+    loadChildren: () => import('./hilfe/hilfe.module').then( m => m.HilfePageModule)
+  },
+  {
+    path: 'liste',
+    loadChildren: () => import('./liste/liste.module').then( m => m.ListePageModule)
+  },
+  {
+    path: 'setup',
+    loadChildren: () => import('./setup/setup.module').then( m => m.SetupPageModule)
   }
 ];
 
