@@ -1,9 +1,16 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>liste</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Breaking News</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let article of articles" (click)="articleSelected(article)">
+      {{ article }}
+    </ion-item>
+  </ion-list>
 </ion-content>
